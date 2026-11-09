@@ -1,0 +1,10 @@
+# dsh-mcp-gateway bundle patch.
+#
+# The profile's own cordis.patch.yml is applied after every bundle layer and may
+# disable this row or override its config:
+#
+#   - id: dsh-mcp-gateway
+#     disabled: true
+- insert:
+    - id: dsh-mcp-gateway
+      name: dsh-mcp-gateway

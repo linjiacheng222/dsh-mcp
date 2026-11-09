@@ -1,0 +1,6 @@
+url: https://github.com/linjiacheng222/dsh-mcp
+name: linjiacheng222/dsh-mcp
+category: tools
+description:
+  en: Streamable HTTP MCP gateway for DeepSeek Harness that lets external agents read, message and wait on DSH sessions.
+  zh: 将本机 DeepSeek Harness 暴露为 Streamable HTTP MCP 网关，让外部 Agent 读取、发送并等待 DSH 会话。

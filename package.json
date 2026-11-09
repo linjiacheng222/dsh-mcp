@@ -1,0 +1,67 @@
+{
+  "name": "dsh-mcp-gateway",
+  "version": "0.3.2",
+  "description": "Streamable HTTP MCP gateway for DeepSeek Harness: let other agents list and read DSH sessions, send messages, and (when granted) run configured models in new or existing sessions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "林嘉诚 <linjiacheng222@users.noreply.github.com>",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "gateway"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linjiacheng222/dsh-mcp.git"
+  },
+  "homepage": "https://github.com/linjiacheng222/dsh-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/linjiacheng222/dsh-mcp/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.2.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.2.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "smoke": "node scripts/smoke-live.mjs"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
