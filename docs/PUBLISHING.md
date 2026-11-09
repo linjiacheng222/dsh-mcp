@@ -14,10 +14,11 @@ DSH 插件市场（`dshmarket`）**没有直接 publish API**。收录流程是�
 - 包版本：`0.3.2`；已移除 `private`，许可证为 MIT，`publishConfig.access=public`。
 - 仓库：`https://github.com/linjiacheng222/dsh-mcp`；`package.json` 已写入 `repository` / `homepage` / `bugs`。
 - 市场条目草稿：[market/linjiacheng222__dsh-mcp.yml](../market/linjiacheng222__dsh-mcp.yml)。
-- **待提供/待登录**：
-  - 公开 GitHub 仓库 URL；
-  - npm 发布账号登录；
-  - GitHub push / PR 授权。
+- 初始提交已推送到 GitHub：`ac4e560`（`main`）。
+- **待完成**：
+  - npm 发布账号登录（当前 `pnpm whoami` 仍返回 unauthorized）；
+  - npm publish；
+  - awesome-dsh-plugin PR。
 
 ## 发布步骤
 
